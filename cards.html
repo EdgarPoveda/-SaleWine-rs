@@ -33,7 +33,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+                <div class="sidebar-brand-text mx-3">SaleWine-rs</div>
             </a>
 
             <!-- Divider -->
@@ -43,7 +43,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="index.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
+                    <span>Stock</span></a>
             </li>
 
             <!-- Divider -->
@@ -63,8 +63,7 @@
                 <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Custom Components:</h6>
-                        <a class="collapse-item" href="buttons.html">Buttons</a>
-                        <a class="collapse-item active" href="cards.html">Cards</a>
+                        <a class="collapse-item active" href="cards.html">Ventas</a>
                     </div>
                 </div>
             </li>
@@ -118,14 +117,14 @@
             <li class="nav-item">
                 <a class="nav-link" href="charts.html">
                     <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Charts</span></a>
+                    <span>Informes</span></a>
             </li>
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
                 <a class="nav-link" href="tables.html">
                     <i class="fas fa-fw fa-table"></i>
-                    <span>Tables</span></a>
+                    <span>Clientes</span></a>
             </li>
 
             <!-- Divider -->
@@ -341,7 +340,7 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                Earnings (Monthly)</div>
+                                                Ventas (mensuales)</div>
                                             <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
                                         </div>
                                         <div class="col-auto">
@@ -359,7 +358,7 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                Earnings (Annual)</div>
+                                                Meta asignada (Anual)</div>
                                             <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
                                         </div>
                                         <div class="col-auto">
@@ -376,11 +375,11 @@
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Tasks
+                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Cumplimiento
                                             </div>
                                             <div class="row no-gutters align-items-center">
                                                 <div class="col-auto">
-                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">18%</div>
                                                 </div>
                                                 <div class="col">
                                                     <div class="progress progress-sm mr-2">
@@ -404,7 +403,7 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                                Pending Requests</div>
+                                                Clientes nuevos</div>
                                             <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
                                         </div>
                                         <div class="col-auto">
@@ -418,67 +417,101 @@
 
                     <div class="row">
 
-                        <div class="col-lg-6">
-
-                            <!-- Default Card Example -->
-                            <div class="card mb-4">
-                                <div class="card-header">
-                                    Default Card Example
-                                </div>
-                                <div class="card-body">
-                                    This card uses Bootstrap's default styling with no utility classes added. Global styles are the only things modifying the look and feel of this default card example.
-                                </div>
-                            </div>
+                        <div class="col-lg-10">
 
                             <!-- Basic Card Example -->
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Basic Card Example</h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">Registrar venta.</h6>
                                 </div>
                                 <div class="card-body">
-                                    The styling for this basic card example is created by using default Bootstrap utility classes. By using utility classes, the style of the card component can be easily modified with no need for any custom CSS!
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="col-lg-6">
-
-                            <!-- Dropdown Card Example -->
-                            <div class="card shadow mb-4">
-                                <!-- Card Header - Dropdown -->
-                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Dropdown Card Example</h6>
-                                    <div class="dropdown no-arrow">
-                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
-                                            <div class="dropdown-header">Dropdown Header:</div>
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Something else here</a>
+                                    <form>
+                                        <div class="form-group row">
+                                            <label for="name" class="col-4 col-form-label">Nombres</label>
+                                            <div class="col-8">
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text">
+                                                            <i class="fa fa-user"></i>
+                                                        </div>
+                                                    </div>
+                                                    <input id="name" name="name" placeholder="Ingrese nombres completos (cliente)." type="text" class="form-control" aria-describedby="nameHelpBlock">
+                                                </div>
+                                                <span id="nameHelpBlock" class="form-text text-muted">Solicite el nombre completo.</span>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <!-- Card Body -->
-                                <div class="card-body">
-                                    Dropdown menus can be placed in the card header in order to extend the functionality of a basic card. In this dropdown card example, the Font Awesome vertical ellipsis icon in the card header can be clicked on in order to toggle a dropdown menu.
-                                </div>
-                            </div>
-
-                            <!-- Collapsable Card Example -->
-                            <div class="card shadow mb-4">
-                                <!-- Card Header - Accordion -->
-                                <a href="#collapseCardExample" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample">
-                                    <h6 class="m-0 font-weight-bold text-primary">Collapsable Card Example</h6>
-                                </a>
-                                <!-- Card Content - Collapse -->
-                                <div class="collapse show" id="collapseCardExample">
-                                    <div class="card-body">
-                                        This is a collapsable card example using Bootstrap's built in collapse functionality. <strong>Click on the card header</strong> to see the card body collapse and expand!
-                                    </div>
+                                        <div class="form-group row">
+                                            <label for="identificacion" class="col-4 col-form-label">Identificación</label>
+                                            <div class="col-8">
+                                                <input id="identificacion" name="identificacion" placeholder="identificación de facturación sin puntos ni comas" type="text" class="form-control" aria-describedby="identificacionHelpBlock">
+                                                <span id="identificacionHelpBlock" class="form-text text-muted">Confirme que la factura se genera a nombre de quien efectúa el pago</span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="articulo" class="col-4 col-form-label">Articulo</label>
+                                            <div class="col-8">
+                                                <select id="articulo" name="articulo" class="custom-select" aria-describedby="articuloHelpBlock" required="required">
+                                              <option value="San Filippo Brunello di Montalcino">San Filippo Brunello di Montalcino</option>
+                                              <option value="Caprili Brunello di Montalcino">Caprili Brunello di Montalcino</option>
+                                              <option value="Piedra Negra Chacayes Los Chacayes">Piedra Negra Chacayes Los Chacayes</option>
+                                              <option value="Caiarossa Toscana Pergolaia">Caiarossa Toscana Pergolaia</option>
+                                              <option value="Istine Chianti Classico">Istine Chianti Classico</option>
+                                              <option value="Travaglini Gattinara">Travaglini Gattinara</option>
+                                              <option value="DeLille D2 Columbia Valley">DeLille D2 Columbia Valley</option>
+                                              <option value="Jermann Pinot Grigio Friuli">Jermann Pinot Grigio Friuli</option>
+                                            </select>
+                                                <span id="articuloHelpBlock" class="form-text text-muted">Seleccione el articulo para vender</span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="cantidad" class="col-4 col-form-label">Cantidad</label>
+                                            <div class="col-8">
+                                                <input id="cantidad" name="cantidad" placeholder="Cantidad de unidades " type="number" class="form-control" aria-describedby="cantidadHelpBlock">
+                                                <span id="cantidadHelpBlock" class="form-text text-muted">Ingrese números sin puntos ni comas</span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="direccion" class="col-4 col-form-label">Dirección</label>
+                                            <div class="col-8">
+                                                <input id="direccion" name="direccion" placeholder="Dirección de despacho" type="text" class="form-control" aria-describedby="direccionHelpBlock">
+                                                <span id="direccionHelpBlock" class="form-text text-muted">Solicite información complementaria</span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="detallle" class="col-4 col-form-label">Detalle</label>
+                                            <div class="col-8">
+                                                <textarea id="detallle" name="detallle" cols="40" rows="5" class="form-control" aria-describedby="detallleHelpBlock"></textarea>
+                                                <span id="detallleHelpBlock" class="form-text text-muted">Ingrese requerimientos del envió y despacho.</span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-4">Validaciones de la venta</label>
+                                            <div class="col-8">
+                                                <div class="custom-control custom-checkbox custom-control-inline">
+                                                    <input name="checkbox" id="checkbox_0" type="checkbox" class="custom-control-input" value="Email" aria-describedby="checkboxHelpBlock">
+                                                    <label for="checkbox_0" class="custom-control-label">Email</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox custom-control-inline">
+                                                    <input name="checkbox" id="checkbox_1" type="checkbox" class="custom-control-input" value="Dirección" aria-describedby="checkboxHelpBlock">
+                                                    <label for="checkbox_1" class="custom-control-label">Dirección</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox custom-control-inline">
+                                                    <input name="checkbox" id="checkbox_2" type="checkbox" class="custom-control-input" value="cantidad de envió " aria-describedby="checkboxHelpBlock">
+                                                    <label for="checkbox_2" class="custom-control-label">Cantidad de envió</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox custom-control-inline">
+                                                    <input name="checkbox" id="checkbox_3" type="checkbox" aria-describedby="checkboxHelpBlock" class="custom-control-input" value="Tipo de pago">
+                                                    <label for="checkbox_3" class="custom-control-label">Tipo de pago</label>
+                                                </div>
+                                                <span id="checkboxHelpBlock" class="form-text text-muted">Verifique el estado de la venta.</span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="offset-4 col-8">
+                                                <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
 
