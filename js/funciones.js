@@ -14,7 +14,7 @@ function editarArticulo(id, articulo, cantidad, disponibilidad, costo, estado) {
     inputEstado.value = estado;
 }
 var alertPlaceholder = document.getElementById('liveAlertPlaceholder')
-var alertTrigger = document.getElementById('eliminar')
+var alertTrigger = document.getElementById('btnEliminar')
 
 function alert(message, type) {
     var wrapper = document.createElement('div')
