@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Dashboard</title>
+    <title>SaleWine-rs</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -33,7 +33,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+                <div class="sidebar-brand-text mx-3">SaleWine-rs</div>
             </a>
 
             <!-- Divider -->
@@ -43,7 +43,7 @@
             <li class="nav-item active">
                 <a class="nav-link" href="index.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
+                    <span>Stock</span></a>
             </li>
 
             <!-- Divider -->
@@ -58,13 +58,12 @@
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-cog"></i>
-                    <span>Components</span>
+                    <span>Ventas</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Custom Components:</h6>
-                        <a class="collapse-item" href="buttons.html">Buttons</a>
-                        <a class="collapse-item" href="cards.html">Cards</a>
+                        <a class="collapse-item" href="cards.html">Venta</a>
                     </div>
                 </div>
             </li>
@@ -118,14 +117,14 @@
             <li class="nav-item">
                 <a class="nav-link" href="charts.html">
                     <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Charts</span></a>
+                    <span>Informes</span></a>
             </li>
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
                 <a class="nav-link" href="tables.html">
                     <i class="fas fa-fw fa-table"></i>
-                    <span>Tables</span></a>
+                    <span>Clientes</span></a>
             </li>
 
             <!-- Divider -->
@@ -347,85 +346,114 @@
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>Name</th>
-                                            <th>Position</th>
-                                            <th>Office</th>
-                                            <th>Age</th>
-                                            <th>Start date</th>
-                                            <th>Salary</th>
+                                            <th>ID</th>
+                                            <th>Articulo</th>
+                                            <th>Cantidad</th>
+                                            <th>Disponibilidad</th>
+                                            <th>Costo</th>
+                                            <th>Estado</th>
                                             <th>Acciones</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
-                                            <th>Name</th>
-                                            <th>Position</th>
-                                            <th>Office</th>
-                                            <th>Age</th>
-                                            <th>Start date</th>
-                                            <th>Salary</th>
+                                            <th>ID</th>
+                                            <th>Articulo</th>
+                                            <th>Cantidad</th>
+                                            <th>Disponibilidad</th>
+                                            <th>Costo</th>
+                                            <th>Estado</th>
                                             <th>Acciones</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
                                         <tr>
-                                            <td>Tiger Nixon</td>
-                                            <td>System Architect</td>
-                                            <td>Edinburgh</td>
-                                            <td>61</td>
-                                            <td>2011/04/25</td>
-                                            <td>$320,800</td>
+                                            <td>1</td>
+                                            <td>San Filippo Brunello di Montalcino</td>
+                                            <td>6200</td>
+                                            <td>3000</td>
+                                            <td>$320</td>
+                                            <td>Disponible</td>
                                             <td><button class="btn-sm btn-danger">Quitar</button>
                                                 <button class="btn-sm btn-warning">Modificar</button>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>Garrett Winters</td>
-                                            <td>Accountant</td>
-                                            <td>Tokyo</td>
-                                            <td>63</td>
-                                            <td>2011/07/25</td>
-                                            <td>$170,750</td>
+                                            <td>2</td>
+                                            <td>Caprili Brunello di Montalcino</td>
+                                            <td>1782</td>
+                                            <td>1230</td>
+                                            <td>$95.9</td>
+                                            <td>Disponible</td>
+                                            <td><button class="btn-sm btn-danger">Quitar</button>
+                                                <button class="btn-sm btn-warning">Modificar</button>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td>Ashton Cox</td>
-                                            <td>Junior Technical Author</td>
-                                            <td>San Francisco</td>
-                                            <td>66</td>
-                                            <td>2009/01/12</td>
-                                            <td>$86,000</td>
+                                            <td>3</td>
+                                            <td>Piedra Negra Chacayes Los Chacayes</td>
+                                            <td>900</td>
+                                            <td>800</td>
+                                            <td>$99.9</td>
+                                            <td>Disponible</td>
+                                            <td><button class="btn-sm btn-danger">Quitar</button>
+                                                <button class="btn-sm btn-warning">Modificar</button>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td>Cedric Kelly</td>
-                                            <td>Senior Javascript Developer</td>
-                                            <td>Edinburgh</td>
-                                            <td>22</td>
-                                            <td>2012/03/29</td>
-                                            <td>$433,060</td>
+                                            <td>4</td>
+                                            <td>Caiarossa Toscana Pergolaia</td>
+                                            <td>9000</td>
+                                            <td>8021</td>
+                                            <td>$15</td>
+                                            <td>Disponible</td>
+                                            <td><button class="btn-sm btn-danger">Quitar</button>
+                                                <button class="btn-sm btn-warning">Modificar</button>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td>Airi Satou</td>
-                                            <td>Accountant</td>
-                                            <td>Tokyo</td>
-                                            <td>33</td>
-                                            <td>2008/11/28</td>
-                                            <td>$162,700</td>
+                                            <td>5</td>
+                                            <td>Istine Chianti Classico</td>
+                                            <td>2300</td>
+                                            <td>2200</td>
+                                            <td>$102</td>
+                                            <td>Disponible</td>
+                                            <td><button class="btn-sm btn-danger">Quitar</button>
+                                                <button class="btn-sm btn-warning">Modificar</button>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td>Brielle Williamson</td>
-                                            <td>Integration Specialist</td>
-                                            <td>New York</td>
-                                            <td>61</td>
-                                            <td>2012/12/02</td>
-                                            <td>$372,000</td>
+                                            <td>6</td>
+                                            <td>Travaglini Gattinara</td>
+                                            <td>1100</td>
+                                            <td>20</td>
+                                            <td>$190</td>
+                                            <td>Agotado</td>
+                                            <td><button class="btn-sm btn-danger">Quitar</button>
+                                                <button class="btn-sm btn-warning">Modificar</button>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td>Donna Snider</td>
-                                            <td>Customer Support</td>
-                                            <td>New York</td>
-                                            <td>27</td>
-                                            <td>2011/01/25</td>
-                                            <td>$112,000</td>
+                                            <td>7</td>
+                                            <td>DeLille D2 Columbia Valley</td>
+                                            <td>3200</td>
+                                            <td>1523</td>
+                                            <td>$98</td>
+                                            <td>Disponible</td>
+                                            <td><button class="btn-sm btn-danger">Quitar</button>
+                                                <button class="btn-sm btn-warning">Modificar</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>Jermann Pinot Grigio Friuli</td>
+                                            <td>1500</td>
+                                            <td>1200</td>
+                                            <td>$32</td>
+                                            <td>Disponible</td>
+                                            <td><button class="btn-sm btn-danger">Quitar</button>
+                                                <button class="btn-sm btn-warning">Modificar</button>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
